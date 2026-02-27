@@ -1,0 +1,110 @@
+name: Cisco Webex Meetings
+description: APIs for the Cisco Webex Meetings platform, enabling developers to integrate meeting management, scheduling, and collaboration features into their applications.
+image: https://www.webex.com/content/dam/wbx/us/images/webex-logo.svg
+url: https://developer.webex.com/docs/meetings
+created: '2024'
+modified: '2024'
+tags:
+- Meetings
+- Video Conferencing
+- Collaboration
+- Enterprise
+- Communications
+apis:
+- name: Meetings API
+  description: Create, update, delete, and manage Webex meetings programmatically
+  image: https://www.webex.com/content/dam/wbx/us/images/webex-logo.svg
+  humanURL: https://developer.webex.com/docs/api/v1/meetings
+  baseURL: https://webexapis.com/v1
+  tags:
+  - Meetings
+  - Scheduling
+  - REST
+  properties:
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/meetings
+  - type: OpenAPI
+    url: https://developer.webex.com/docs/api/v1/openapi.json
+  - type: Authentication
+    url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
+  contact:
+  - FN: Webex Developer Support
+    email: devsupport@webex.com
+    url: https://developer.webex.com/support
+- name: Meeting Preferences API
+  description: Manage user meeting preferences including audio, video, and scheduling settings
+  image: https://www.webex.com/content/dam/wbx/us/images/webex-logo.svg
+  humanURL: https://developer.webex.com/docs/api/v1/meeting-preferences
+  baseURL: https://webexapis.com/v1
+  tags:
+  - Preferences
+  - Settings
+  - REST
+  properties:
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/meeting-preferences
+  - type: OpenAPI
+    url: https://developer.webex.com/docs/api/v1/openapi.json
+- name: Recordings API
+  description: Access and manage meeting recordings
+  image: https://www.webex.com/content/dam/wbx/us/images/webex-logo.svg
+  humanURL: https://developer.webex.com/docs/api/v1/recordings
+  baseURL: https://webexapis.com/v1
+  tags:
+  - Recordings
+  - Media
+  - REST
+  properties:
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/recordings
+  - type: OpenAPI
+    url: https://developer.webex.com/docs/api/v1/openapi.json
+- name: Meeting Transcripts API
+  description: Retrieve and manage meeting transcripts
+  image: https://www.webex.com/content/dam/wbx/us/images/webex-logo.svg
+  humanURL: https://developer.webex.com/docs/api/v1/meeting-transcripts
+  baseURL: https://webexapis.com/v1
+  tags:
+  - Transcripts
+  - Accessibility
+  - REST
+  properties:
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/meeting-transcripts
+- name: Webex Meetings XML API
+  description: Legacy XML-based API for deep integration with Webex Meetings
+  image: https://www.webex.com/content/dam/wbx/us/images/webex-logo.svg
+  humanURL: https://developer.cisco.com/docs/webex-xml-api-reference-guide/
+  baseURL: https://api.webex.com/WBXService/XMLService
+  tags:
+  - XML
+  - Legacy
+  - SOAP
+  properties:
+  - type: Documentation
+    url: https://developer.cisco.com/docs/webex-xml-api-reference-guide/
+  - type: Schema
+    url: https://developer.cisco.com/docs/webex-xml-api-reference-guide/#!xml-api-schema
+common:
+- type: Getting Started
+  url: https://developer.webex.com/docs/getting-started
+- type: Authentication
+  url: https://developer.webex.com/docs/integrations
+- type: Webhooks
+  url: https://developer.webex.com/docs/webhooks
+- type: SDKs
+  url: https://developer.webex.com/docs/sdks
+- type: Status Page
+  url: https://status.webex.com/
+- type: Terms of Service
+  url: https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end-user-license-agreement.html
+- type: Privacy Policy
+  url: https://www.cisco.com/c/en/us/about/legal/privacy-full.html
+- type: Support
+  url: https://developer.webex.com/support
+- type: Blog
+  url: https://developer.webex.com/blog
+maintainers:
+- FN: Cisco Webex
+  email: devsupport@webex.com
+  url: https://developer.webex.com
