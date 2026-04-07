@@ -3,11 +3,11 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/cisco-webex-meetings/refs/heads/main/apis.yml
 name: Cisco Webex Meetings
 tags:
+  - Collaboration
+  - Communications
+  - Enterprise
   - Meetings
   - Video Conferencing
-  - Collaboration
-  - Enterprise
-  - Communications
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
@@ -37,8 +37,8 @@ apis:
   - aid: cisco-webex-meetings:webex-recordings-api
     name: Recordings API
     tags:
-      - Recordings
       - Media
+      - Recordings
     humanURL: https://developer.webex.com/docs/api/v1/recordings
     properties:
       - url: https://developer.webex.com/docs/api/v1/recordings
