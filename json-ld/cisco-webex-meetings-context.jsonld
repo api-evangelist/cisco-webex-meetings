@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "@vocab": "https://apievangelist.com/vocab/cisco-webex-meetings/",
+    "schema": "https://schema.org/",
+    "webex": "https://developer.webex.com/vocab/",
+    "Meeting": "schema:Event",
+    "Recording": "schema:VideoObject",
+    "Transcript": "schema:CreativeWork",
+    "Participant": "schema:Person",
+    "Invitee": "schema:Person",
+    "Host": "schema:Person",
+    "Site": "webex:Site",
+    "PersonalRoom": "webex:PersonalRoom",
+    "Poll": "webex:Poll",
+    "QandA": "webex:QandA",
+    "name": "schema:name",
+    "title": "webex:title",
+    "startTime": "schema:startDate",
+    "endTime": "schema:endDate",
+    "duration": "schema:duration",
+    "joinLink": "webex:joinLink",
+    "createdAt": "schema:dateCreated",
+    "updatedAt": "schema:dateModified"
+  }
+}

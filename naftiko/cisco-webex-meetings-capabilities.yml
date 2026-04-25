@@ -1,0 +1,46 @@
+capabilities:
+  - id: cisco-webex-meetings.schedule-meeting
+    name: Schedule a Webex meeting
+    description: >-
+      Create one-time or recurring Webex meetings with hosts, invitees,
+      and meeting templates.
+    apis:
+      - cisco-webex-meetings:meetings-api
+      - cisco-webex-meetings:meeting-invitees-api
+  - id: cisco-webex-meetings.run-meeting
+    name: Run an active meeting
+    description: >-
+      Manage participants in active meetings including admit, mute,
+      and remove operations.
+    apis:
+      - cisco-webex-meetings:meeting-participants-api
+  - id: cisco-webex-meetings.access-recordings
+    name: Access meeting recordings
+    description: >-
+      Retrieve recording metadata, download URLs, and manage recording
+      lifecycles for compliance and reporting.
+    apis:
+      - cisco-webex-meetings:recordings-api
+  - id: cisco-webex-meetings.access-transcripts
+    name: Access meeting transcripts
+    description: >-
+      Retrieve and download VTT or TXT meeting transcripts for
+      compliance and content workflows.
+    apis:
+      - cisco-webex-meetings:meeting-transcripts-api
+  - id: cisco-webex-meetings.engage-attendees
+    name: Engage meeting attendees
+    description: >-
+      Run polls, capture Q and A, and gather chat transcripts during
+      Webex meetings and webinars.
+    apis:
+      - cisco-webex-meetings:meeting-polls-api
+      - cisco-webex-meetings:meeting-qa-api
+      - cisco-webex-meetings:meeting-chats-api
+  - id: cisco-webex-meetings.administer-site
+    name: Administer Webex site
+    description: >-
+      Use the legacy XML API for deep enterprise integration including
+      site administration and user provisioning.
+    apis:
+      - cisco-webex-meetings:webex-xml-api

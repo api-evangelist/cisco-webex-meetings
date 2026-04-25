@@ -1,0 +1,38 @@
+extends:
+  - spectral:oas
+rules:
+  webex-meetings-server-https:
+    description: All Webex Meetings API servers MUST use HTTPS.
+    severity: error
+    given: $.servers[*].url
+    then:
+      function: pattern
+      functionOptions:
+        match: '^https://'
+  webex-meetings-base-url:
+    description: Webex Meetings server URL SHOULD be webexapis.com/v1.
+    severity: warn
+    given: $.servers[*].url
+    then:
+      function: pattern
+      functionOptions:
+        match: '^https://webexapis\.com/v1'
+  webex-meetings-operation-id:
+    description: Operations MUST have an operationId.
+    severity: error
+    given: $.paths[*][get,post,put,delete,patch]
+    then:
+      field: operationId
+      function: truthy
+  webex-meetings-tag-required:
+    description: Operations MUST be tagged.
+    severity: warn
+    given: $.paths[*][get,post,put,delete,patch].tags
+    then:
+      function: truthy
+  webex-meetings-oauth-required:
+    description: API SHOULD declare OAuth 2.0 security scheme.
+    severity: warn
+    given: $.components.securitySchemes
+    then:
+      function: truthy
