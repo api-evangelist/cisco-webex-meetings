@@ -127,8 +127,8 @@ The legacy SOAP-style interface for deep integration with Webex Meetings, suppor
 - [Terms of Service](https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end-user-license-agreement.html)
 - [Privacy Policy](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
 - [JSON-LD Context](json-ld/cisco-webex-meetings-context.jsonld)
-- [Spectral Ruleset](spectral/cisco-webex-meetings-spectral.yml)
-- [Naftiko Capabilities](naftiko/cisco-webex-meetings-capabilities.yml)
+- [Spectral Ruleset](rules/cisco-webex-meetings-rules.yml)
+- [Naftiko Capabilities](capabilities/cisco-webex-meetings-capabilities.yml)
 
 ## Maintainers
 

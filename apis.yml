@@ -217,9 +217,9 @@ common:
   - type: JSON-LD
     url: json-ld/cisco-webex-meetings-context.jsonld
   - type: Spectral
-    url: spectral/cisco-webex-meetings-spectral.yml
+    url: rules/cisco-webex-meetings-rules.yml
   - type: Naftiko Capabilities
-    url: naftiko/cisco-webex-meetings-capabilities.yml
+    url: capabilities/cisco-webex-meetings-capabilities.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
