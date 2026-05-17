@@ -190,7 +190,7 @@ common:
     url: https://developer.webex.com/
   - type: Documentation
     url: https://developer.webex.com/docs/meetings
-  - type: Getting Started
+  - type: GettingStarted
     url: https://developer.webex.com/docs/getting-started
   - type: Authentication
     url: https://developer.webex.com/docs/integrations
@@ -198,11 +198,11 @@ common:
     url: https://developer.webex.com/docs/sdks
   - type: Webhooks
     url: https://developer.webex.com/docs/webhooks
-  - type: Rate Limits
+  - type: RateLimits
     url: https://developer.webex.com/docs/api-rate-limits
-  - type: Change Log
+  - type: ChangeLog
     url: https://developer.webex.com/docs/api/changelog
-  - type: Status
+  - type: StatusPage
     url: https://status.webex.com/
   - type: Support
     url: https://developer.webex.com/support
@@ -210,11 +210,11 @@ common:
     url: https://developer.webex.com/blog
   - type: Community
     url: https://community.cisco.com/t5/webex-developers/bd-p/4416j-disc-dev-webex
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end-user-license-agreement.html
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://www.cisco.com/c/en/us/about/legal/privacy-full.html
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/cisco-webex-meetings-context.jsonld
   - type: Spectral
     url: rules/cisco-webex-meetings-rules.yml
