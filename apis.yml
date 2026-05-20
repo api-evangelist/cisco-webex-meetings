@@ -186,6 +186,8 @@ apis:
       user provisioning, and meeting management for scenarios that
       pre-date the REST API.
 common:
+  - type: GitHubOrganization
+    url: https://github.com/webex
   - type: Portal
     url: https://developer.webex.com/
   - type: Documentation
