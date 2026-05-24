@@ -1,0 +1,335 @@
+openapi: 3.1.0
+info:
+  title: Cisco Webex Meetings API
+  description: |
+    The Webex Meetings API enables scheduling, updating, deleting, and
+    listing of Webex meetings. Endpoints support recurring meetings,
+    meeting templates, invitees, recordings, transcripts, and host
+    delegation. Authentication uses OAuth 2.0 bearer tokens or personal
+    access tokens issued through the Webex Developer Portal.
+  version: "1.0.0"
+  contact:
+    name: Webex for Developers
+    url: https://developer.webex.com/docs/api/v1/meetings
+servers:
+  - url: https://webexapis.com/v1
+    description: Webex APIs
+security:
+  - bearerAuth: []
+tags:
+  - name: Meetings
+  - name: Invitees
+  - name: Recordings
+  - name: Transcripts
+  - name: Templates
+paths:
+  /meetings:
+    get:
+      tags: [Meetings]
+      summary: List meetings
+      operationId: listMeetings
+      parameters:
+        - in: query
+          name: meetingNumber
+          schema: { type: string }
+        - in: query
+          name: webLink
+          schema: { type: string }
+        - in: query
+          name: roomId
+          schema: { type: string }
+        - in: query
+          name: meetingType
+          schema:
+            type: string
+            enum: [meetingSeries, scheduledMeeting, meeting]
+        - in: query
+          name: state
+          schema:
+            type: string
+            enum: [active, scheduled, ready, lobby, inProgress, ended, missed, expired]
+        - in: query
+          name: from
+          schema: { type: string, format: date-time }
+        - in: query
+          name: to
+          schema: { type: string, format: date-time }
+        - in: query
+          name: max
+          schema: { type: integer }
+        - in: query
+          name: hostEmail
+          schema: { type: string, format: email }
+      responses:
+        "200":
+          description: A list of meetings
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: "#/components/schemas/Meeting" }
+    post:
+      tags: [Meetings]
+      summary: Create a meeting
+      operationId: createMeeting
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/MeetingCreate" }
+      responses:
+        "200":
+          description: The created meeting
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Meeting" }
+  /meetings/{meetingId}:
+    parameters:
+      - in: path
+        name: meetingId
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Meetings]
+      summary: Get a meeting
+      operationId: getMeeting
+      responses:
+        "200":
+          description: A meeting
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Meeting" }
+    put:
+      tags: [Meetings]
+      summary: Update a meeting
+      operationId: updateMeeting
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/MeetingCreate" }
+      responses:
+        "200":
+          description: The updated meeting
+    delete:
+      tags: [Meetings]
+      summary: Delete a meeting
+      operationId: deleteMeeting
+      parameters:
+        - in: query
+          name: hostEmail
+          schema: { type: string, format: email }
+        - in: query
+          name: sendEmail
+          schema: { type: boolean }
+      responses:
+        "204":
+          description: Deleted
+  /meetingInvitees:
+    get:
+      tags: [Invitees]
+      summary: List meeting invitees for a meeting
+      operationId: listMeetingInvitees
+      parameters:
+        - in: query
+          name: meetingId
+          required: true
+          schema: { type: string }
+        - in: query
+          name: max
+          schema: { type: integer }
+        - in: query
+          name: hostEmail
+          schema: { type: string, format: email }
+        - in: query
+          name: panelist
+          schema: { type: boolean }
+      responses:
+        "200":
+          description: A list of meeting invitees
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: "#/components/schemas/Invitee" }
+    post:
+      tags: [Invitees]
+      summary: Create a meeting invitee
+      operationId: createMeetingInvitee
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/Invitee" }
+      responses:
+        "200":
+          description: Created invitee
+  /meetingInvitees/{meetingInviteeId}:
+    parameters:
+      - in: path
+        name: meetingInviteeId
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Invitees]
+      summary: Get a meeting invitee
+      operationId: getMeetingInvitee
+      responses:
+        "200":
+          description: Invitee
+    put:
+      tags: [Invitees]
+      summary: Update a meeting invitee
+      operationId: updateMeetingInvitee
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/Invitee" }
+      responses:
+        "200":
+          description: Updated invitee
+    delete:
+      tags: [Invitees]
+      summary: Delete a meeting invitee
+      operationId: deleteMeetingInvitee
+      responses:
+        "204":
+          description: Deleted
+  /recordings:
+    get:
+      tags: [Recordings]
+      summary: List recordings
+      operationId: listRecordings
+      parameters:
+        - in: query
+          name: max
+          schema: { type: integer }
+        - in: query
+          name: from
+          schema: { type: string, format: date-time }
+        - in: query
+          name: to
+          schema: { type: string, format: date-time }
+        - in: query
+          name: meetingId
+          schema: { type: string }
+        - in: query
+          name: hostEmail
+          schema: { type: string, format: email }
+      responses:
+        "200":
+          description: A list of recordings
+  /recordings/{recordingId}:
+    parameters:
+      - in: path
+        name: recordingId
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Recordings]
+      summary: Get recording details
+      operationId: getRecording
+      responses:
+        "200":
+          description: A recording
+    delete:
+      tags: [Recordings]
+      summary: Delete a recording
+      operationId: deleteRecording
+      responses:
+        "204":
+          description: Deleted
+  /meetingTranscripts:
+    get:
+      tags: [Transcripts]
+      summary: List meeting transcripts
+      operationId: listMeetingTranscripts
+      parameters:
+        - in: query
+          name: meetingId
+          schema: { type: string }
+        - in: query
+          name: hostEmail
+          schema: { type: string, format: email }
+        - in: query
+          name: max
+          schema: { type: integer }
+      responses:
+        "200":
+          description: A list of transcripts
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: OAuth2-Access-Token
+  schemas:
+    Meeting:
+      type: object
+      properties:
+        id: { type: string }
+        meetingNumber: { type: string }
+        title: { type: string }
+        agenda: { type: string }
+        password: { type: string }
+        phoneAndVideoSystemPassword: { type: string }
+        meetingType: { type: string }
+        state: { type: string }
+        timezone: { type: string }
+        start: { type: string, format: date-time }
+        end: { type: string, format: date-time }
+        recurrence: { type: string }
+        hostUserId: { type: string }
+        hostDisplayName: { type: string }
+        hostEmail: { type: string, format: email }
+        hostKey: { type: string }
+        siteUrl: { type: string }
+        webLink: { type: string }
+        sipAddress: { type: string }
+        dialInIpAddress: { type: string }
+        roomId: { type: string }
+        enabledAutoRecordMeeting: { type: boolean }
+        allowAnyUserToBeCoHost: { type: boolean }
+        enabledJoinBeforeHost: { type: boolean }
+        enableConnectAudioBeforeHost: { type: boolean }
+        joinBeforeHostMinutes: { type: integer }
+        excludePassword: { type: boolean }
+        publicMeeting: { type: boolean }
+        reminderTime: { type: integer }
+    MeetingCreate:
+      type: object
+      required: [title, start, end]
+      properties:
+        title: { type: string }
+        agenda: { type: string }
+        password: { type: string }
+        start: { type: string, format: date-time }
+        end: { type: string, format: date-time }
+        timezone: { type: string }
+        recurrence: { type: string }
+        enabledAutoRecordMeeting: { type: boolean }
+        allowAnyUserToBeCoHost: { type: boolean }
+        enabledJoinBeforeHost: { type: boolean }
+        invitees:
+          type: array
+          items: { $ref: "#/components/schemas/Invitee" }
+        sendEmail: { type: boolean }
+        hostEmail: { type: string, format: email }
+        siteUrl: { type: string }
+        roomId: { type: string }
+    Invitee:
+      type: object
+      properties:
+        id: { type: string }
+        email: { type: string, format: email }
+        displayName: { type: string }
+        coHost: { type: boolean }
+        meetingId: { type: string }
+        panelist: { type: boolean }
