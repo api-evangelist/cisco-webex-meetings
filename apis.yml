@@ -14,13 +14,10 @@ tags:
   - Meetings
   - Video Conferencing
 description: >-
-  Cisco Webex Meetings is the meetings-focused subset of the Webex
-  collaboration platform, providing scheduling, hosting, recording,
-  transcription, and meeting administration capabilities through the
-  Webex REST API. Authentication uses OAuth 2.0 access tokens, personal
-  access tokens, or service apps and all endpoints respond with JSON.
-  The legacy XML API remains available for deep integrations and
-  enterprise scenarios that pre-date the REST surface.
+  Cisco Webex Meetings is the meetings-focused subset of the Webex collaboration platform, providing scheduling,
+  hosting, recording, transcription, and meeting administration capabilities through the Webex REST API. Authentication
+  uses OAuth 2.0 access tokens, personal access tokens, or service apps and all endpoints respond with JSON. The legacy
+  XML API remains available for deep integrations and enterprise scenarios that pre-date the REST surface.
 apis:
   - aid: cisco-webex-meetings:meetings-api
     name: Webex Meetings API
@@ -38,10 +35,9 @@ apis:
       - url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
         type: Authentication
     description: >-
-      The Webex Meetings API enables scheduling, updating, deleting, and
-      listing of Webex meetings. Endpoints support recurring meetings,
-      meeting templates, and host delegation. Authentication uses OAuth
-      2.0 bearer tokens or personal access tokens.
+      The Webex Meetings API enables scheduling, updating, deleting, and listing of Webex meetings. Endpoints support
+      recurring meetings, meeting templates, and host delegation. Authentication uses OAuth 2.0 bearer tokens or
+      personal access tokens.
   - aid: cisco-webex-meetings:meeting-invitees-api
     name: Webex Meeting Invitees API
     tags:
@@ -55,9 +51,8 @@ apis:
       - url: https://developer.webex.com/docs/api/v1/meeting-invitees
         type: Documentation
     description: >-
-      Manage invitee lists for scheduled Webex meetings. Endpoints
-      support adding, updating, and removing meeting invitees and
-      bulk-inviting attendees by email.
+      Manage invitee lists for scheduled Webex meetings. Endpoints support adding, updating, and removing meeting
+      invitees and bulk-inviting attendees by email.
   - aid: cisco-webex-meetings:meeting-participants-api
     name: Webex Meeting Participants API
     tags:
@@ -71,9 +66,8 @@ apis:
       - url: https://developer.webex.com/docs/api/v1/meeting-participants
         type: Documentation
     description: >-
-      List and update participants in active or completed Webex
-      meetings. Supports admin-mute, lobby admit, and participant
-      removal operations during in-progress meetings.
+      List and update participants in active or completed Webex meetings. Supports admin-mute, lobby admit, and
+      participant removal operations during in-progress meetings.
   - aid: cisco-webex-meetings:meeting-preferences-api
     name: Webex Meeting Preferences API
     tags:
@@ -87,8 +81,8 @@ apis:
       - url: https://developer.webex.com/docs/api/v1/meeting-preferences
         type: Documentation
     description: >-
-      Manage host meeting preferences including personal room URLs,
-      audio defaults, scheduling templates, and site preferences.
+      Manage host meeting preferences including personal room URLs, audio defaults, scheduling templates, and site
+      preferences.
   - aid: cisco-webex-meetings:recordings-api
     name: Webex Recordings API
     tags:
@@ -103,9 +97,8 @@ apis:
       - url: https://developer.webex.com/docs/api/v1/recordings
         type: Documentation
     description: >-
-      List and manage meeting recordings. Provides access to recording
-      details, download links, and metadata, with separate endpoints
-      for admin and compliance officer access.
+      List and manage meeting recordings. Provides access to recording details, download links, and metadata, with
+      separate endpoints for admin and compliance officer access.
   - aid: cisco-webex-meetings:meeting-transcripts-api
     name: Webex Meeting Transcripts API
     tags:
@@ -120,9 +113,8 @@ apis:
       - url: https://developer.webex.com/docs/api/v1/meeting-transcripts
         type: Documentation
     description: >-
-      Retrieve and manage meeting transcripts including download
-      endpoints for VTT and TXT transcript formats. Supports compliance
-      officer access for governance workflows.
+      Retrieve and manage meeting transcripts including download endpoints for VTT and TXT transcript formats. Supports
+      compliance officer access for governance workflows.
   - aid: cisco-webex-meetings:meeting-qa-api
     name: Webex Meeting Q and A API
     tags:
@@ -136,8 +128,8 @@ apis:
       - url: https://developer.webex.com/docs/api/v1/meeting-qanda
         type: Documentation
     description: >-
-      Retrieve questions and answers from Webex meetings and webinars
-      for engagement reporting and post-event follow-up workflows.
+      Retrieve questions and answers from Webex meetings and webinars for engagement reporting and post-event follow-up
+      workflows.
   - aid: cisco-webex-meetings:meeting-polls-api
     name: Webex Meeting Polls API
     tags:
@@ -151,8 +143,8 @@ apis:
       - url: https://developer.webex.com/docs/api/v1/meeting-polls
         type: Documentation
     description: >-
-      Retrieve polls and poll responses from Webex meetings and
-      webinars for engagement analytics and post-event reporting.
+      Retrieve polls and poll responses from Webex meetings and webinars for engagement analytics and post-event
+      reporting.
   - aid: cisco-webex-meetings:meeting-chats-api
     name: Webex Meeting Chats API
     tags:
@@ -165,9 +157,7 @@ apis:
     properties:
       - url: https://developer.webex.com/docs/api/v1/meeting-chats
         type: Documentation
-    description: >-
-      Retrieve chat transcripts from completed Webex meetings for
-      compliance and post-meeting reporting.
+    description: Retrieve chat transcripts from completed Webex meetings for compliance and post-meeting reporting.
   - aid: cisco-webex-meetings:webex-xml-api
     name: Webex XML API
     tags:
@@ -181,10 +171,8 @@ apis:
       - url: https://developer.cisco.com/docs/webex-xml-api-reference-guide/
         type: Documentation
     description: >-
-      The Webex XML API is the legacy SOAP-style interface for deep
-      integration with Webex Meetings. It supports site administration,
-      user provisioning, and meeting management for scenarios that
-      pre-date the REST API.
+      The Webex XML API is the legacy SOAP-style interface for deep integration with Webex Meetings. It supports site
+      administration, user provisioning, and meeting management for scenarios that pre-date the REST API.
 common:
   - type: GitHubOrganization
     url: https://github.com/webex
@@ -220,8 +208,6 @@ common:
     url: json-ld/cisco-webex-meetings-context.jsonld
   - type: Spectral
     url: rules/cisco-webex-meetings-rules.yml
-  - type: Naftiko Capabilities
-    url: capabilities/cisco-webex-meetings-capabilities.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
