@@ -1,0 +1,397 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cisco Webex Meetings API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Meetings",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List meetings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/meetings",
+            "params": [
+              {
+                "name": "meetingNumber",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "webLink",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "roomId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "meetingType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "state",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "max",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "hostEmail",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List meetings"
+        },
+        {
+          "info": {
+            "name": "Create a meeting",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://webexapis.com/v1/meetings",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a meeting"
+        },
+        {
+          "info": {
+            "name": "Get a meeting",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/meetings/:meetingId",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a meeting"
+        },
+        {
+          "info": {
+            "name": "Update a meeting",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://webexapis.com/v1/meetings/:meetingId",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a meeting"
+        },
+        {
+          "info": {
+            "name": "Delete a meeting",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://webexapis.com/v1/meetings/:meetingId",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "hostEmail",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "sendEmail",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Delete a meeting"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Invitees",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List meeting invitees for a meeting",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/meetingInvitees",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "max",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "hostEmail",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "panelist",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List meeting invitees for a meeting"
+        },
+        {
+          "info": {
+            "name": "Create a meeting invitee",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://webexapis.com/v1/meetingInvitees",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a meeting invitee"
+        },
+        {
+          "info": {
+            "name": "Get a meeting invitee",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/meetingInvitees/:meetingInviteeId",
+            "params": [
+              {
+                "name": "meetingInviteeId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a meeting invitee"
+        },
+        {
+          "info": {
+            "name": "Update a meeting invitee",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://webexapis.com/v1/meetingInvitees/:meetingInviteeId",
+            "params": [
+              {
+                "name": "meetingInviteeId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a meeting invitee"
+        },
+        {
+          "info": {
+            "name": "Delete a meeting invitee",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://webexapis.com/v1/meetingInvitees/:meetingInviteeId",
+            "params": [
+              {
+                "name": "meetingInviteeId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a meeting invitee"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Recordings",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List recordings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/recordings",
+            "params": [
+              {
+                "name": "max",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "hostEmail",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List recordings"
+        },
+        {
+          "info": {
+            "name": "Get recording details",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/recordings/:recordingId",
+            "params": [
+              {
+                "name": "recordingId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get recording details"
+        },
+        {
+          "info": {
+            "name": "Delete a recording",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://webexapis.com/v1/recordings/:recordingId",
+            "params": [
+              {
+                "name": "recordingId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a recording"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Transcripts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List meeting transcripts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/meetingTranscripts",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "hostEmail",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "max",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List meeting transcripts"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,1486 @@
+{
+  "item": [
+    {
+      "id": "9cb05b58-1b5f-4428-9804-f83d83835f80",
+      "name": "Meetings",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "98b5f806-84db-4740-af4f-9dac8d56e1fc",
+          "name": "List meetings",
+          "request": {
+            "name": "List meetings",
+            "description": {},
+            "url": {
+              "path": [
+                "meetings"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "meetingNumber",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "webLink",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "roomId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "meetingType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "state",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "from",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "to",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "max",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "hostEmail",
+                  "value": "<email>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "562ad1b8-404a-486f-8ceb-74c54720f907",
+              "name": "A list of meetings",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetings"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "meetingNumber",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "webLink",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "roomId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "meetingType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "state",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "from",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "key": "to",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "key": "max",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "hostEmail",
+                      "value": "<email>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    {\n      \"id\": \"string\",\n      \"meetingNumber\": \"string\",\n      \"title\": \"string\",\n      \"agenda\": \"string\",\n      \"password\": \"string\",\n      \"phoneAndVideoSystemPassword\": \"string\",\n      \"meetingType\": \"string\",\n      \"state\": \"string\",\n      \"timezone\": \"string\",\n      \"start\": \"2013-10-29T10:19:18.238Z\",\n      \"end\": \"1953-01-22T01:06:56.052Z\",\n      \"recurrence\": \"string\",\n      \"hostUserId\": \"string\",\n      \"hostDisplayName\": \"string\",\n      \"hostEmail\": \"yGTo@tpjCROdQLNROkzkWlaUmrJXf.pnjo\",\n      \"hostKey\": \"string\",\n      \"siteUrl\": \"string\",\n      \"webLink\": \"string\",\n      \"sipAddress\": \"string\",\n      \"dialInIpAddress\": \"string\",\n      \"roomId\": \"string\",\n      \"enabledAutoRecordMeeting\": true,\n      \"allowAnyUserToBeCoHost\": true,\n      \"enabledJoinBeforeHost\": false,\n      \"enableConnectAudioBeforeHost\": true,\n      \"joinBeforeHostMinutes\": 8251,\n      \"excludePassword\": true,\n      \"publicMeeting\": true,\n      \"reminderTime\": 2688\n    },\n    {\n      \"id\": \"string\",\n      \"meetingNumber\": \"string\",\n      \"title\": \"string\",\n      \"agenda\": \"string\",\n      \"password\": \"string\",\n      \"phoneAndVideoSystemPassword\": \"string\",\n      \"meetingType\": \"string\",\n      \"state\": \"string\",\n      \"timezone\": \"string\",\n      \"start\": \"1969-02-05T12:36:07.430Z\",\n      \"end\": \"1950-02-05T20:52:26.263Z\",\n      \"recurrence\": \"string\",\n      \"hostUserId\": \"string\",\n      \"hostDisplayName\": \"string\",\n      \"hostEmail\": \"Djppp3GXwG@IAwDiYjLTV.zehx\",\n      \"hostKey\": \"string\",\n      \"siteUrl\": \"string\",\n      \"webLink\": \"string\",\n      \"sipAddress\": \"string\",\n      \"dialInIpAddress\": \"string\",\n      \"roomId\": \"string\",\n      \"enabledAutoRecordMeeting\": false,\n      \"allowAnyUserToBeCoHost\": false,\n      \"enabledJoinBeforeHost\": true,\n      \"enableConnectAudioBeforeHost\": false,\n      \"joinBeforeHostMinutes\": 772,\n      \"excludePassword\": false,\n      \"publicMeeting\": false,\n      \"reminderTime\": 2566\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4bce0f23-0ebe-4646-88a4-a3929547ea80",
+          "name": "Create a meeting",
+          "request": {
+            "name": "Create a meeting",
+            "description": {},
+            "url": {
+              "path": [
+                "meetings"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"<string>\",\n  \"start\": \"<dateTime>\",\n  \"end\": \"<dateTime>\",\n  \"agenda\": \"<string>\",\n  \"password\": \"<string>\",\n  \"timezone\": \"<string>\",\n  \"recurrence\": \"<string>\",\n  \"enabledAutoRecordMeeting\": \"<boolean>\",\n  \"allowAnyUserToBeCoHost\": \"<boolean>\",\n  \"enabledJoinBeforeHost\": \"<boolean>\",\n  \"invitees\": [\n    {\n      \"id\": \"<string>\",\n      \"email\": \"<email>\",\n      \"displayName\": \"<string>\",\n      \"coHost\": \"<boolean>\",\n      \"meetingId\": \"<string>\",\n      \"panelist\": \"<boolean>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"email\": \"<email>\",\n      \"displayName\": \"<string>\",\n      \"coHost\": \"<boolean>\",\n      \"meetingId\": \"<string>\",\n      \"panelist\": \"<boolean>\"\n    }\n  ],\n  \"sendEmail\": \"<boolean>\",\n  \"hostEmail\": \"<email>\",\n  \"siteUrl\": \"<string>\",\n  \"roomId\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "ea235e7f-9640-4920-bf77-390c27ab5f7d",
+              "name": "The created meeting",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetings"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"title\": \"<string>\",\n  \"start\": \"<dateTime>\",\n  \"end\": \"<dateTime>\",\n  \"agenda\": \"<string>\",\n  \"password\": \"<string>\",\n  \"timezone\": \"<string>\",\n  \"recurrence\": \"<string>\",\n  \"enabledAutoRecordMeeting\": \"<boolean>\",\n  \"allowAnyUserToBeCoHost\": \"<boolean>\",\n  \"enabledJoinBeforeHost\": \"<boolean>\",\n  \"invitees\": [\n    {\n      \"id\": \"string\",\n      \"email\": \"uYGLMtM0R1BJB@L.vp\",\n      \"displayName\": \"string\",\n      \"coHost\": true,\n      \"meetingId\": \"string\",\n      \"panelist\": true\n    },\n    {\n      \"id\": \"string\",\n      \"email\": \"t51peGIyyIR@LXKbDOcvffDTrSqTgzpBaIXuxH.drt\",\n      \"displayName\": \"string\",\n      \"coHost\": false,\n      \"meetingId\": \"string\",\n      \"panelist\": false\n    }\n  ],\n  \"sendEmail\": \"<boolean>\",\n  \"hostEmail\": \"<email>\",\n  \"siteUrl\": \"<string>\",\n  \"roomId\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"meetingNumber\": \"string\",\n  \"title\": \"string\",\n  \"agenda\": \"string\",\n  \"password\": \"string\",\n  \"phoneAndVideoSystemPassword\": \"string\",\n  \"meetingType\": \"string\",\n  \"state\": \"string\",\n  \"timezone\": \"string\",\n  \"start\": \"1989-04-24T23:13:21.246Z\",\n  \"end\": \"1955-11-01T05:49:14.194Z\",\n  \"recurrence\": \"string\",\n  \"hostUserId\": \"string\",\n  \"hostDisplayName\": \"string\",\n  \"hostEmail\": \"h1NcHZn7qbv252@strgHXpV.xfhp\",\n  \"hostKey\": \"string\",\n  \"siteUrl\": \"string\",\n  \"webLink\": \"string\",\n  \"sipAddress\": \"string\",\n  \"dialInIpAddress\": \"string\",\n  \"roomId\": \"string\",\n  \"enabledAutoRecordMeeting\": true,\n  \"allowAnyUserToBeCoHost\": true,\n  \"enabledJoinBeforeHost\": true,\n  \"enableConnectAudioBeforeHost\": true,\n  \"joinBeforeHostMinutes\": 280,\n  \"excludePassword\": true,\n  \"publicMeeting\": false,\n  \"reminderTime\": 7825\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6083d9fb-94c8-46a1-8d74-a08b0da55294",
+          "name": "Get a meeting",
+          "request": {
+            "name": "Get a meeting",
+            "description": {},
+            "url": {
+              "path": [
+                "meetings",
+                ":meetingId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "meetingId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1c94c0e0-fd92-44f2-acb2-dcc92b43eb91",
+              "name": "A meeting",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetings",
+                    ":meetingId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "meetingId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"meetingNumber\": \"string\",\n  \"title\": \"string\",\n  \"agenda\": \"string\",\n  \"password\": \"string\",\n  \"phoneAndVideoSystemPassword\": \"string\",\n  \"meetingType\": \"string\",\n  \"state\": \"string\",\n  \"timezone\": \"string\",\n  \"start\": \"1989-04-24T23:13:21.246Z\",\n  \"end\": \"1955-11-01T05:49:14.194Z\",\n  \"recurrence\": \"string\",\n  \"hostUserId\": \"string\",\n  \"hostDisplayName\": \"string\",\n  \"hostEmail\": \"h1NcHZn7qbv252@strgHXpV.xfhp\",\n  \"hostKey\": \"string\",\n  \"siteUrl\": \"string\",\n  \"webLink\": \"string\",\n  \"sipAddress\": \"string\",\n  \"dialInIpAddress\": \"string\",\n  \"roomId\": \"string\",\n  \"enabledAutoRecordMeeting\": true,\n  \"allowAnyUserToBeCoHost\": true,\n  \"enabledJoinBeforeHost\": true,\n  \"enableConnectAudioBeforeHost\": true,\n  \"joinBeforeHostMinutes\": 280,\n  \"excludePassword\": true,\n  \"publicMeeting\": false,\n  \"reminderTime\": 7825\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fb6e6986-c5e0-4d05-8931-2deaece054c2",
+          "name": "Update a meeting",
+          "request": {
+            "name": "Update a meeting",
+            "description": {},
+            "url": {
+              "path": [
+                "meetings",
+                ":meetingId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "meetingId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"<string>\",\n  \"start\": \"<dateTime>\",\n  \"end\": \"<dateTime>\",\n  \"agenda\": \"<string>\",\n  \"password\": \"<string>\",\n  \"timezone\": \"<string>\",\n  \"recurrence\": \"<string>\",\n  \"enabledAutoRecordMeeting\": \"<boolean>\",\n  \"allowAnyUserToBeCoHost\": \"<boolean>\",\n  \"enabledJoinBeforeHost\": \"<boolean>\",\n  \"invitees\": [\n    {\n      \"id\": \"<string>\",\n      \"email\": \"<email>\",\n      \"displayName\": \"<string>\",\n      \"coHost\": \"<boolean>\",\n      \"meetingId\": \"<string>\",\n      \"panelist\": \"<boolean>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"email\": \"<email>\",\n      \"displayName\": \"<string>\",\n      \"coHost\": \"<boolean>\",\n      \"meetingId\": \"<string>\",\n      \"panelist\": \"<boolean>\"\n    }\n  ],\n  \"sendEmail\": \"<boolean>\",\n  \"hostEmail\": \"<email>\",\n  \"siteUrl\": \"<string>\",\n  \"roomId\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "b49564f8-0f5b-438c-8edc-119d42d8fa4f",
+              "name": "The updated meeting",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetings",
+                    ":meetingId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "meetingId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"title\": \"<string>\",\n  \"start\": \"<dateTime>\",\n  \"end\": \"<dateTime>\",\n  \"agenda\": \"<string>\",\n  \"password\": \"<string>\",\n  \"timezone\": \"<string>\",\n  \"recurrence\": \"<string>\",\n  \"enabledAutoRecordMeeting\": \"<boolean>\",\n  \"allowAnyUserToBeCoHost\": \"<boolean>\",\n  \"enabledJoinBeforeHost\": \"<boolean>\",\n  \"invitees\": [\n    {\n      \"id\": \"string\",\n      \"email\": \"uYGLMtM0R1BJB@L.vp\",\n      \"displayName\": \"string\",\n      \"coHost\": true,\n      \"meetingId\": \"string\",\n      \"panelist\": true\n    },\n    {\n      \"id\": \"string\",\n      \"email\": \"t51peGIyyIR@LXKbDOcvffDTrSqTgzpBaIXuxH.drt\",\n      \"displayName\": \"string\",\n      \"coHost\": false,\n      \"meetingId\": \"string\",\n      \"panelist\": false\n    }\n  ],\n  \"sendEmail\": \"<boolean>\",\n  \"hostEmail\": \"<email>\",\n  \"siteUrl\": \"<string>\",\n  \"roomId\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ef9218ec-3ca7-4efa-a3ac-33bd177a5ee4",
+          "name": "Delete a meeting",
+          "request": {
+            "name": "Delete a meeting",
+            "description": {},
+            "url": {
+              "path": [
+                "meetings",
+                ":meetingId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "hostEmail",
+                  "value": "<email>"
+                },
+                {
+                  "disabled": false,
+                  "key": "sendEmail",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "meetingId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ec020d0c-136d-425a-a9e0-75b7bd5329dc",
+              "name": "Deleted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetings",
+                    ":meetingId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "hostEmail",
+                      "value": "<email>"
+                    },
+                    {
+                      "key": "sendEmail",
+                      "value": "<boolean>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "meetingId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "67f89283-cf16-4cc3-8b4d-b1a7feeaad23",
+      "name": "Invitees",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "5fc2ef74-c1c8-4594-b58f-7af6658b6eca",
+          "name": "List meeting invitees for a meeting",
+          "request": {
+            "name": "List meeting invitees for a meeting",
+            "description": {},
+            "url": {
+              "path": [
+                "meetingInvitees"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "meetingId",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "max",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "hostEmail",
+                  "value": "<email>"
+                },
+                {
+                  "disabled": false,
+                  "key": "panelist",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c9cf777d-f134-45b0-9b82-154e5d9c695d",
+              "name": "A list of meeting invitees",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetingInvitees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "meetingId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "max",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "hostEmail",
+                      "value": "<email>"
+                    },
+                    {
+                      "key": "panelist",
+                      "value": "<boolean>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    {\n      \"id\": \"string\",\n      \"email\": \"C3ki1Qn8l@iqREKXGm.gx\",\n      \"displayName\": \"string\",\n      \"coHost\": false,\n      \"meetingId\": \"string\",\n      \"panelist\": true\n    },\n    {\n      \"id\": \"string\",\n      \"email\": \"i0i74S5@lUDNySfoPYcYDOsunwaPIOXRmdglA.js\",\n      \"displayName\": \"string\",\n      \"coHost\": false,\n      \"meetingId\": \"string\",\n      \"panelist\": true\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2b88e138-8c45-40cb-982c-f2c5f320b1c9",
+          "name": "Create a meeting invitee",
+          "request": {
+            "name": "Create a meeting invitee",
+            "description": {},
+            "url": {
+              "path": [
+                "meetingInvitees"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"<string>\",\n  \"email\": \"<email>\",\n  \"displayName\": \"<string>\",\n  \"coHost\": \"<boolean>\",\n  \"meetingId\": \"<string>\",\n  \"panelist\": \"<boolean>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "89f1f7df-c8ce-4099-a75d-59f136e07a19",
+              "name": "Created invitee",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetingInvitees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"id\": \"<string>\",\n  \"email\": \"<email>\",\n  \"displayName\": \"<string>\",\n  \"coHost\": \"<boolean>\",\n  \"meetingId\": \"<string>\",\n  \"panelist\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a93ba22e-64df-4646-894a-6f56b2d9a7e1",
+          "name": "Get a meeting invitee",
+          "request": {
+            "name": "Get a meeting invitee",
+            "description": {},
+            "url": {
+              "path": [
+                "meetingInvitees",
+                ":meetingInviteeId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "meetingInviteeId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ab7f797f-b9b8-443b-a994-752ec76784d1",
+              "name": "Invitee",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetingInvitees",
+                    ":meetingInviteeId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "meetingInviteeId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3af93e47-23ab-418f-a68c-f473c824583f",
+          "name": "Update a meeting invitee",
+          "request": {
+            "name": "Update a meeting invitee",
+            "description": {},
+            "url": {
+              "path": [
+                "meetingInvitees",
+                ":meetingInviteeId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "meetingInviteeId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"<string>\",\n  \"email\": \"<email>\",\n  \"displayName\": \"<string>\",\n  \"coHost\": \"<boolean>\",\n  \"meetingId\": \"<string>\",\n  \"panelist\": \"<boolean>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "74505655-d695-42dd-a4b6-8f5eada60855",
+              "name": "Updated invitee",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetingInvitees",
+                    ":meetingInviteeId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "meetingInviteeId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"id\": \"<string>\",\n  \"email\": \"<email>\",\n  \"displayName\": \"<string>\",\n  \"coHost\": \"<boolean>\",\n  \"meetingId\": \"<string>\",\n  \"panelist\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c67de9e8-35c7-474b-86fe-3dcb983a9426",
+          "name": "Delete a meeting invitee",
+          "request": {
+            "name": "Delete a meeting invitee",
+            "description": {},
+            "url": {
+              "path": [
+                "meetingInvitees",
+                ":meetingInviteeId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "meetingInviteeId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e278d5fb-c0d4-4014-bd01-10863434e007",
+              "name": "Deleted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetingInvitees",
+                    ":meetingInviteeId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "meetingInviteeId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "946b0d44-029c-4b16-ad60-969990d67414",
+      "name": "Recordings",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "45ca1f9b-4db1-4723-9134-28c0527a106b",
+          "name": "List recordings",
+          "request": {
+            "name": "List recordings",
+            "description": {},
+            "url": {
+              "path": [
+                "recordings"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "max",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "from",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "to",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "meetingId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "hostEmail",
+                  "value": "<email>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "50e660ab-391a-4132-a722-86b366f287a1",
+              "name": "A list of recordings",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recordings"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "max",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "from",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "key": "to",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "key": "meetingId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "hostEmail",
+                      "value": "<email>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5c73281e-05b5-439c-bddb-294f885e283d",
+          "name": "Get recording details",
+          "request": {
+            "name": "Get recording details",
+            "description": {},
+            "url": {
+              "path": [
+                "recordings",
+                ":recordingId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "recordingId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a9714c4c-2eb5-4699-99a2-e660bda06704",
+              "name": "A recording",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recordings",
+                    ":recordingId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "recordingId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8b18566d-5e8a-42ae-ba40-31c59e07ca40",
+          "name": "Delete a recording",
+          "request": {
+            "name": "Delete a recording",
+            "description": {},
+            "url": {
+              "path": [
+                "recordings",
+                ":recordingId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "recordingId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4fac836c-e491-49a4-b80d-88594f6b7a7c",
+              "name": "Deleted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recordings",
+                    ":recordingId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "recordingId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "93e0359c-78d4-4a47-b19d-9be99c511b91",
+      "name": "Transcripts",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a50b69c3-9e54-4f25-8aa4-fa613b04a204",
+          "name": "List meeting transcripts",
+          "request": {
+            "name": "List meeting transcripts",
+            "description": {},
+            "url": {
+              "path": [
+                "meetingTranscripts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "meetingId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "hostEmail",
+                  "value": "<email>"
+                },
+                {
+                  "disabled": false,
+                  "key": "max",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "80a2bcb5-61a6-4bd1-bba1-ef39079a933b",
+              "name": "A list of transcripts",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetingTranscripts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "meetingId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "hostEmail",
+                      "value": "<email>"
+                    },
+                    {
+                      "key": "max",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "1e1e47d0-739f-47f6-b07d-bf9396640247",
+      "name": "Templates",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://webexapis.com/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "7006ddd7-4759-45b7-a222-663bc5425b17",
+    "name": "Cisco Webex Meetings API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Webex Meetings API enables scheduling, updating, deleting, and\nlisting of Webex meetings. Endpoints support recurring meetings,\nmeeting templates, invitees, recordings, transcripts, and host\ndelegation. Authentication uses OAuth 2.0 bearer tokens or personal\naccess tokens issued through the Webex Developer Portal.\n\n\nContact Support:\n Name: Webex for Developers",
+      "type": "text/plain"
+    }
+  }
+}
