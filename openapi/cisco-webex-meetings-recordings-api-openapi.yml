@@ -1,0 +1,88 @@
+openapi: 3.1.0
+info:
+  title: Cisco Webex Meetings Invitees Recordings API
+  description: 'The Webex Meetings API enables scheduling, updating, deleting, and
+
+    listing of Webex meetings. Endpoints support recurring meetings,
+
+    meeting templates, invitees, recordings, transcripts, and host
+
+    delegation. Authentication uses OAuth 2.0 bearer tokens or personal
+
+    access tokens issued through the Webex Developer Portal.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Webex for Developers
+    url: https://developer.webex.com/docs/api/v1/meetings
+servers:
+- url: https://webexapis.com/v1
+  description: Webex APIs
+security:
+- bearerAuth: []
+tags:
+- name: Recordings
+paths:
+  /recordings:
+    get:
+      tags:
+      - Recordings
+      summary: List recordings
+      operationId: listRecordings
+      parameters:
+      - in: query
+        name: max
+        schema:
+          type: integer
+      - in: query
+        name: from
+        schema:
+          type: string
+          format: date-time
+      - in: query
+        name: to
+        schema:
+          type: string
+          format: date-time
+      - in: query
+        name: meetingId
+        schema:
+          type: string
+      - in: query
+        name: hostEmail
+        schema:
+          type: string
+          format: email
+      responses:
+        '200':
+          description: A list of recordings
+  /recordings/{recordingId}:
+    parameters:
+    - in: path
+      name: recordingId
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Recordings
+      summary: Get recording details
+      operationId: getRecording
+      responses:
+        '200':
+          description: A recording
+    delete:
+      tags:
+      - Recordings
+      summary: Delete a recording
+      operationId: deleteRecording
+      responses:
+        '204':
+          description: Deleted
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: OAuth2-Access-Token
