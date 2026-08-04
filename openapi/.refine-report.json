@@ -1,0 +1,20 @@
+{
+  "provider": "cisco-webex-meetings",
+  "sources": [
+    "cisco-webex-meetings-invitees-api-openapi.yml",
+    "cisco-webex-meetings-meetings-api-openapi.yml",
+    "cisco-webex-meetings-recordings-api-openapi.yml",
+    "cisco-webex-meetings-transcripts-api-openapi.yml"
+  ],
+  "outputs": [
+    "cisco-webex-meetings-invitees-api-openapi.yml",
+    "cisco-webex-meetings-meetings-api-openapi.yml",
+    "cisco-webex-meetings-recordings-api-openapi.yml",
+    "cisco-webex-meetings-transcripts-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
