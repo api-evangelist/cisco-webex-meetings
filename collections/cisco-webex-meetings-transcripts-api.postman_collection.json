@@ -1,0 +1,135 @@
+{
+  "item": [
+    {
+      "id": "e586072f-db3f-4cac-b151-a7ac156ec67e",
+      "name": "Transcripts",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7b1ac4ba-f55c-41df-86f6-a2f90a268c3a",
+          "name": "List meeting transcripts",
+          "request": {
+            "name": "List meeting transcripts",
+            "description": {},
+            "url": {
+              "path": [
+                "meetingTranscripts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "meetingId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "hostEmail",
+                  "value": "<email>"
+                },
+                {
+                  "disabled": false,
+                  "key": "max",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c0f7dea6-5634-482e-9a04-33ff8798f1e6",
+              "name": "A list of transcripts",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "meetingTranscripts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "meetingId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "hostEmail",
+                      "value": "<email>"
+                    },
+                    {
+                      "key": "max",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://webexapis.com/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "a301a962-f33a-4179-b63c-50e18edf03fc",
+    "name": "Cisco Webex Meetings Invitees Transcripts API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Webex Meetings API enables scheduling, updating, deleting, and\nlisting of Webex meetings. Endpoints support recurring meetings,\nmeeting templates, invitees, recordings, transcripts, and host\ndelegation. Authentication uses OAuth 2.0 bearer tokens or personal\naccess tokens issued through the Webex Developer Portal.\n\n\nContact Support:\n Name: Webex for Developers",
+      "type": "text/plain"
+    }
+  }
+}

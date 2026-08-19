@@ -1,0 +1,130 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cisco Webex Meetings Invitees API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Invitees",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List meeting invitees for a meeting",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/meetingInvitees",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "max",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "hostEmail",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "panelist",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List meeting invitees for a meeting"
+        },
+        {
+          "info": {
+            "name": "Create a meeting invitee",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://webexapis.com/v1/meetingInvitees",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a meeting invitee"
+        },
+        {
+          "info": {
+            "name": "Get a meeting invitee",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/meetingInvitees/:meetingInviteeId",
+            "params": [
+              {
+                "name": "meetingInviteeId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a meeting invitee"
+        },
+        {
+          "info": {
+            "name": "Update a meeting invitee",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://webexapis.com/v1/meetingInvitees/:meetingInviteeId",
+            "params": [
+              {
+                "name": "meetingInviteeId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a meeting invitee"
+        },
+        {
+          "info": {
+            "name": "Delete a meeting invitee",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://webexapis.com/v1/meetingInvitees/:meetingInviteeId",
+            "params": [
+              {
+                "name": "meetingInviteeId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a meeting invitee"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
