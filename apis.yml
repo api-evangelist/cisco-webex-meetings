@@ -112,6 +112,11 @@ apis:
   name: Webex Meeting Transcripts API
   tags:
   - Accessibility
+  - Artificial Intelligence
+  - Captions
+  - Transcripts
+  tags_raw:
+  - Accessibility
   - AI
   - Captions
   - Transcripts
@@ -126,6 +131,10 @@ apis:
 - aid: cisco-webex-meetings:meeting-qa-api
   name: Webex Meeting Q and A API
   tags:
+  - Engagement
+  - Q&A
+  - Webinars
+  tags_raw:
   - Engagement
   - Q and A
   - Webinars
