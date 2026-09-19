@@ -111,6 +111,11 @@ apis:
   tags:
   - Compliance
   - Media
+  - Recording
+  - Storage
+  tags_raw:
+  - Compliance
+  - Media
   - Recordings
   - Storage
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
@@ -228,6 +233,8 @@ apis:
   humanURL: https://developer.webex.com/docs/api/v1/meetings
   baseURL: https://webexapis.com/v1
   tags:
+  - Recording
+  tags_raw:
   - Recordings
   properties:
   - type: OpenAPI
