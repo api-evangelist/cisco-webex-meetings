@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Cisco Webex Meetings Invitees Recordings API
+  title: Cisco Webex Meetings Recordings API
   description: 'The Webex Meetings API enables scheduling, updating, deleting, and
 
     listing of Webex meetings. Endpoints support recurring meetings,
@@ -9,9 +9,7 @@ info:
 
     delegation. Authentication uses OAuth 2.0 bearer tokens or personal
 
-    access tokens issued through the Webex Developer Portal.
-
-    '
+    access tokens issued through the Webex Developer Portal.'
   version: 1.0.0
   contact:
     name: Webex for Developers

@@ -1,10 +1,7 @@
 {
   "provider": "cisco-webex-meetings",
   "sources": [
-    "cisco-webex-meetings-invitees-api-openapi.yml",
-    "cisco-webex-meetings-meetings-api-openapi.yml",
-    "cisco-webex-meetings-recordings-api-openapi.yml",
-    "cisco-webex-meetings-transcripts-api-openapi.yml"
+    "_original/cisco-webex-meetings-openapi.yml"
   ],
   "outputs": [
     "cisco-webex-meetings-invitees-api-openapi.yml",
@@ -15,6 +12,15 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "cisco-webex-meetings-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "cisco-webex-meetings-invitees-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-webex-meetings-meetings-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-webex-meetings-recordings-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-webex-meetings-transcripts-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
