@@ -28,3 +28,16 @@
     builder: unknown (not in the directory record)
   status: not-a-workflow
   arazzo: null
+- slug: cisco-webex-meetings-hubspot-own
+  label: HubSpot (own)
+  partner: hubspot
+  partner_name: HubSpot (own)
+  category: VIDEO
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://ecosystem.hubspot.com/marketplace/listing/webex-476773
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
