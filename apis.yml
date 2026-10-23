@@ -250,6 +250,8 @@ apis:
   - type: OpenAPI
     url: openapi/cisco-webex-meetings-transcripts-api-openapi.yml
 common:
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/cisco-webex-meetings/overview
 - type: Plans
   url: plans/cisco-webex-meetings-plans-pricing.yml
 - type: FinOps
