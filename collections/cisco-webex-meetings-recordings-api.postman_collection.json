@@ -1,69 +1,234 @@
 {
+  "info": {
+    "_postman_id": "95cc9d41-e122-401d-bfbc-f419f344ba3a",
+    "name": "Cisco Webex Meetings Recordings API",
+    "description": "The Webex Meetings API enables scheduling, updating, deleting, and\nlisting of Webex meetings. Endpoints support recurring meetings,\nmeeting templates, invitees, recordings, transcripts, and host\ndelegation. Authentication uses OAuth 2.0 bearer tokens or personal\naccess tokens issued through the Webex Developer Portal.\n\nContact Support:\n Name: Webex for Developers",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-10-21T20:52:48.000Z",
+    "updatedAt": "2026-10-21T20:52:48.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-95cc9d41-e122-401d-bfbc-f419f344ba3a"
+  },
   "item": [
     {
-      "id": "627f2d3f-4229-4751-9ad4-03fcadcc8646",
-      "name": "Recordings",
-      "description": {
-        "content": "",
-        "type": "text/plain"
-      },
+      "name": "recordings",
       "item": [
         {
-          "id": "8f502918-5d14-4b2d-9946-3ac5da9b115e",
-          "name": "List recordings",
-          "request": {
-            "name": "List recordings",
-            "description": {},
-            "url": {
-              "path": [
-                "recordings"
+          "name": "{recordingId}",
+          "item": [
+            {
+              "name": "Get recording details",
+              "id": "0600bfc8-51fd-4fa8-a41a-d813e6bc8f91",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/recordings/:recordingId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "recordings",
+                    ":recordingId"
+                  ],
+                  "variable": [
+                    {
+                      "id": "54ce047b-ff11-4ad5-a453-a65aecbb378c",
+                      "key": "recordingId",
+                      "value": "<string>",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "0e3e1f3a-f084-4832-9b77-f9be3e9a9915",
+                  "name": "A recording",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/recordings/:recordingId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "recordings",
+                        ":recordingId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "recordingId"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-10-21T20:52:49.000Z",
+                  "updatedAt": "2026-10-21T20:52:49.000Z",
+                  "uid": "35240-0e3e1f3a-f084-4832-9b77-f9be3e9a9915"
+                }
               ],
+              "createdAt": "2026-10-21T20:52:49.000Z",
+              "updatedAt": "2026-10-21T20:52:49.000Z",
+              "uid": "35240-0600bfc8-51fd-4fa8-a41a-d813e6bc8f91"
+            },
+            {
+              "name": "Delete a recording",
+              "id": "c5d6e724-0b24-439b-bc5e-13a21dd3d049",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/recordings/:recordingId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "recordings",
+                    ":recordingId"
+                  ],
+                  "variable": [
+                    {
+                      "id": "4f22724a-7a77-48f3-a81b-454913686e2a",
+                      "key": "recordingId",
+                      "value": "<string>",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "414735b9-d122-4ad5-acbb-f5fe57650076",
+                  "name": "Deleted",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/recordings/:recordingId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "recordings",
+                        ":recordingId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "recordingId"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-10-21T20:52:49.000Z",
+                  "updatedAt": "2026-10-21T20:52:49.000Z",
+                  "uid": "35240-414735b9-d122-4ad5-acbb-f5fe57650076"
+                }
+              ],
+              "createdAt": "2026-10-21T20:52:49.000Z",
+              "updatedAt": "2026-10-21T20:52:49.000Z",
+              "uid": "35240-c5d6e724-0b24-439b-bc5e-13a21dd3d049"
+            }
+          ],
+          "id": "9fbb866c-c203-4c7a-9a99-1c0056c698c2",
+          "createdAt": "2026-10-21T20:52:49.000Z",
+          "updatedAt": "2026-10-21T20:52:49.000Z",
+          "uid": "35240-9fbb866c-c203-4c7a-9a99-1c0056c698c2"
+        },
+        {
+          "name": "List recordings",
+          "id": "ac095dec-66ab-4a3b-b51a-a807579b5699",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/recordings?max=<integer>&from=<dateTime>&to=<dateTime>&meetingId=<string>&hostEmail=<email>",
               "host": [
                 "{{baseUrl}}"
               ],
+              "path": [
+                "recordings"
+              ],
               "query": [
                 {
-                  "disabled": false,
                   "key": "max",
                   "value": "<integer>"
                 },
                 {
-                  "disabled": false,
                   "key": "from",
                   "value": "<dateTime>"
                 },
                 {
-                  "disabled": false,
                   "key": "to",
                   "value": "<dateTime>"
                 },
                 {
-                  "disabled": false,
                   "key": "meetingId",
                   "value": "<string>"
                 },
                 {
-                  "disabled": false,
                   "key": "hostEmail",
                   "value": "<email>"
                 }
-              ],
-              "variable": []
-            },
-            "method": "GET",
-            "auth": null
+              ]
+            }
           },
           "response": [
             {
-              "id": "72a00688-9fef-44aa-89a5-141d9190b397",
+              "id": "cd721d23-cb05-4ea2-9bef-3d654abe4f57",
               "name": "A list of recordings",
               "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
                 "url": {
-                  "path": [
-                    "recordings"
-                  ],
+                  "raw": "{{baseUrl}}/recordings?max=<integer>&from=<dateTime>&to=<dateTime>&meetingId=<string>&hostEmail=<email>",
                   "host": [
                     "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "recordings"
                   ],
                   "query": [
                     {
@@ -86,216 +251,30 @@
                       "key": "hostEmail",
                       "value": "<email>"
                     }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: bearer",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "Bearer <token>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
+                  ]
+                }
               },
               "status": "OK",
               "code": 200,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "text/plain"
-                }
-              ],
-              "body": "",
+              "_postman_previewlanguage": "text",
+              "header": [],
               "cookie": [],
-              "_postman_previewlanguage": "text"
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-10-21T20:52:49.000Z",
+              "updatedAt": "2026-10-21T20:52:49.000Z",
+              "uid": "35240-cd721d23-cb05-4ea2-9bef-3d654abe4f57"
             }
           ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
-        },
-        {
-          "id": "4b18c5eb-b63f-4afa-8ca4-60a308e87271",
-          "name": "Get recording details",
-          "request": {
-            "name": "Get recording details",
-            "description": {},
-            "url": {
-              "path": [
-                "recordings",
-                ":recordingId"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": [
-                {
-                  "disabled": false,
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "recordingId",
-                  "description": "(Required) "
-                }
-              ]
-            },
-            "method": "GET",
-            "auth": null
-          },
-          "response": [
-            {
-              "id": "9dabcf65-20bd-4135-b719-bc3f617cf4b2",
-              "name": "A recording",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "recordings",
-                    ":recordingId"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [],
-                  "variable": [
-                    {
-                      "disabled": false,
-                      "type": "any",
-                      "value": "<string>",
-                      "key": "recordingId",
-                      "description": "(Required) "
-                    }
-                  ]
-                },
-                "header": [
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: bearer",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "Bearer <token>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "text/plain"
-                }
-              ],
-              "body": "",
-              "cookie": [],
-              "_postman_previewlanguage": "text"
-            }
-          ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
-        },
-        {
-          "id": "519dc227-c775-482d-8d35-7ea9b4065b7c",
-          "name": "Delete a recording",
-          "request": {
-            "name": "Delete a recording",
-            "description": {},
-            "url": {
-              "path": [
-                "recordings",
-                ":recordingId"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": [
-                {
-                  "disabled": false,
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "recordingId",
-                  "description": "(Required) "
-                }
-              ]
-            },
-            "method": "DELETE",
-            "auth": null
-          },
-          "response": [
-            {
-              "id": "35b05b9a-4e0c-4f2f-85b8-edcdd0c361ef",
-              "name": "Deleted",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "recordings",
-                    ":recordingId"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [],
-                  "variable": [
-                    {
-                      "disabled": false,
-                      "type": "any",
-                      "value": "<string>",
-                      "key": "recordingId",
-                      "description": "(Required) "
-                    }
-                  ]
-                },
-                "header": [
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: bearer",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "Bearer <token>"
-                  }
-                ],
-                "method": "DELETE",
-                "body": {}
-              },
-              "status": "No Content",
-              "code": 204,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "text/plain"
-                }
-              ],
-              "body": "",
-              "cookie": [],
-              "_postman_previewlanguage": "text"
-            }
-          ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
+          "createdAt": "2026-10-21T20:52:49.000Z",
+          "updatedAt": "2026-10-21T20:52:49.000Z",
+          "uid": "35240-ac095dec-66ab-4a3b-b51a-a807579b5699"
         }
       ],
-      "event": []
-    }
-  ],
-  "event": [],
-  "variable": [
-    {
-      "type": "string",
-      "value": "https://webexapis.com/v1",
-      "key": "baseUrl"
+      "id": "288f764b-c974-4c01-a4f7-cc7fc8917e0c",
+      "createdAt": "2026-10-21T20:52:49.000Z",
+      "updatedAt": "2026-10-21T20:52:49.000Z",
+      "uid": "35240-288f764b-c974-4c01-a4f7-cc7fc8917e0c"
     }
   ],
   "auth": {
@@ -303,17 +282,15 @@
     "bearer": [
       {
         "key": "token",
-        "value": "{{bearerToken}}"
+        "value": "{{bearerToken}}",
+        "type": "string"
       }
     ]
   },
-  "info": {
-    "_postman_id": "7f64f2a1-b5b7-401d-ae8b-56392752925a",
-    "name": "Cisco Webex Meetings Invitees Recordings API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "description": {
-      "content": "The Webex Meetings API enables scheduling, updating, deleting, and\nlisting of Webex meetings. Endpoints support recurring meetings,\nmeeting templates, invitees, recordings, transcripts, and host\ndelegation. Authentication uses OAuth 2.0 bearer tokens or personal\naccess tokens issued through the Webex Developer Portal.\n\n\nContact Support:\n Name: Webex for Developers",
-      "type": "text/plain"
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://webexapis.com/v1"
     }
-  }
+  ]
 }
