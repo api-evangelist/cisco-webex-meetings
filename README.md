@@ -1,4 +1,4 @@
-# Cisco Webex Meetings (cisco-webex-meetings)
+# Cisco Webex Meetings
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,244 +66,114 @@
 
 Cisco Webex Meetings is the meetings-focused subset of the Webex collaboration platform, providing scheduling, hosting, recording, transcription, and meeting administration capabilities through the Webex REST API. Authentication uses OAuth 2.0 access tokens, personal access tokens, or service apps and all endpoints respond with JSON. The legacy XML API remains available for deep integrations and enterprise scenarios that pre-date the REST surface.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/cisco-webex-meetings/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/cisco-webex-meetings/refs/heads/main/apis.yml)
+**Areas:** Collaboration · Communications · Enterprise · Meetings · Video Conferencing
 
-## Scope
+## Cisco Webex Meetings on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Cisco Webex Meetings is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cisco-webex-meetings/](https://apis.io/providers/cisco-webex-meetings/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (14)
 
-- Collaboration
-- Communications
-- Enterprise
-- Meetings
-- Video Conferencing
+- [Webex Meetings API](https://apis.io/apis/cisco-webex-meetings/meetings-api/) — The Webex Meetings API enables scheduling, updating, deleting, and listing of Webex meetings. Endpoints support recurring meetings, meeting templates, and…
+- [Webex Meeting Invitees API](https://apis.io/apis/cisco-webex-meetings/meeting-invitees-api/) — Manage invitee lists for scheduled Webex meetings. Endpoints support adding, updating, and removing meeting invitees and bulk-inviting attendees by email.
+- [Webex Meeting Participants API](https://apis.io/apis/cisco-webex-meetings/meeting-participants-api/) — List and update participants in active or completed Webex meetings. Supports admin-mute, lobby admit, and participant removal operations during in-progress…
+- [Webex Meeting Preferences API](https://apis.io/apis/cisco-webex-meetings/meeting-preferences-api/) — Manage host meeting preferences including personal room URLs, audio defaults, scheduling templates, and site preferences.
+- [Webex Recordings API](https://apis.io/apis/cisco-webex-meetings/recordings-api/) — List and manage meeting recordings. Provides access to recording details, download links, and metadata, with separate endpoints for admin and compliance…
+- [Webex Meeting Transcripts API](https://apis.io/apis/cisco-webex-meetings/meeting-transcripts-api/) — Retrieve and manage meeting transcripts including download endpoints for VTT and TXT transcript formats. Supports compliance officer access for governance…
+- [Webex Meeting Q and A API](https://apis.io/apis/cisco-webex-meetings/meeting-qa-api/) — Retrieve questions and answers from Webex meetings and webinars for engagement reporting and post-event follow-up workflows.
+- [Webex Meeting Polls API](https://apis.io/apis/cisco-webex-meetings/meeting-polls-api/) — Retrieve polls and poll responses from Webex meetings and webinars for engagement analytics and post-event reporting.
+- [Webex Meeting Chats API](https://apis.io/apis/cisco-webex-meetings/meeting-chats-api/) — Retrieve chat transcripts from completed Webex meetings for compliance and post-meeting reporting.
+- [Webex XML API](https://apis.io/apis/cisco-webex-meetings/webex-xml-api/) — The Webex XML API is the legacy SOAP-style interface for deep integration with Webex Meetings. It supports site administration, user provisioning, and…
+- [Cisco Webex Meetings Invitees API](https://apis.io/apis/cisco-webex-meetings/cisco-webex-meetings-invitees-api/) — The Invitees API from Cisco Webex Meetings — 2 operation(s) for invitees.
+- [Cisco Webex Meetings API](https://apis.io/apis/cisco-webex-meetings/cisco-webex-meetings-meetings-api/) — The Meetings API from Cisco Webex Meetings — 2 operation(s) for meetings.
+- [Cisco Webex Meetings Recordings API](https://apis.io/apis/cisco-webex-meetings/cisco-webex-meetings-recordings-api/) — The Recordings API from Cisco Webex Meetings — 2 operation(s) for recordings.
+- [Cisco Webex Meetings Transcripts API](https://apis.io/apis/cisco-webex-meetings/cisco-webex-meetings-transcripts-api/) — The Transcripts API from Cisco Webex Meetings — 1 operation(s) for transcripts.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-04-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Webex Meetings API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Webex Meetings API enables scheduling, updating, deleting, and listing of Webex meetings. Endpoints support recurring meetings, meeting templates, and host delegation. Authentication uses OAuth 2.0 bearer tokens or personal access tokens.
+- [Cisco Webex Meetings Agentic Access](https://apis.io/agentic-access/cisco-webex-meetings/cisco-webex-meetings-agentic-access/)
 
-- **Human URL:** [https://developer.webex.com/docs/api/v1/meetings](https://developer.webex.com/docs/api/v1/meetings)
-- **Base URL:** `https://webexapis.com/v1`
+#### JSON-LD (1)
 
-#### Tags
+Linked-data contexts for the provider's vocabulary.
 
-- Conferencing
-- Meetings
-- Scheduling
-- Video
+- [Cisco Webex Meetings Context](https://apis.io/jsonld/cisco-webex-meetings/cisco-webex-meetings-context/)
 
-#### Properties
+#### Collections (5)
 
-- [Documentation](https://developer.webex.com/docs/api/v1/meetings)
-- [Authentication](https://developer.webex.com/docs/getting-started#accounts-and-authentication)
-- [Postman Collection](collections/cisco-webex-meetings.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-webex-meetings.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-### Webex Meeting Invitees API
+- [Cisco Webex Meetings API](https://apis.io/collections/cisco-webex-meetings/open-cisco-webex-meetings/)
+- [Cisco Webex Meetings Invitees API](https://apis.io/collections/cisco-webex-meetings/open-cisco-webex-meetings-invitees-api/)
+- [Cisco Webex Invitees Meetings API](https://apis.io/collections/cisco-webex-meetings/open-cisco-webex-meetings-meetings-api/)
+- [Cisco Webex Meetings Invitees Recordings API](https://apis.io/collections/cisco-webex-meetings/open-cisco-webex-meetings-recordings-api/)
+- [Cisco Webex Meetings Invitees Transcripts API](https://apis.io/collections/cisco-webex-meetings/open-cisco-webex-meetings-transcripts-api/)
 
-Manage invitee lists for scheduled Webex meetings. Endpoints support adding, updating, and removing meeting invitees and bulk-inviting attendees by email.
+#### Governance rules (1)
 
-- **Human URL:** [https://developer.webex.com/docs/api/v1/meeting-invitees](https://developer.webex.com/docs/api/v1/meeting-invitees)
-- **Base URL:** `https://webexapis.com/v1`
+Spectral rulesets for the provider's contracts.
 
-#### Tags
+- [Cisco Webex Meetings API Rules](https://apis.io/rules/cisco-webex-meetings/cisco-webex-meetings-rules/)
 
-- Attendees
-- Invitees
-- Meetings
+#### Security (2)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://developer.webex.com/docs/api/v1/meeting-invitees)
-- [Postman Collection](collections/cisco-webex-meetings.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-webex-meetings.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Cisco Webex Meetings Authentication](https://apis.io/security/cisco-webex-meetings/cisco-webex-meetings-authentication/)
+- [Cisco Webex Meetings Domain Security](https://apis.io/security/cisco-webex-meetings/cisco-webex-meetings-domain-security/)
 
-### Webex Meeting Participants API
+#### Plans and pricing (1)
 
-List and update participants in active or completed Webex meetings. Supports admin-mute, lobby admit, and participant removal operations during in-progress meetings.
+Published plans, tiers and prices.
 
-- **Human URL:** [https://developer.webex.com/docs/api/v1/meeting-participants](https://developer.webex.com/docs/api/v1/meeting-participants)
-- **Base URL:** `https://webexapis.com/v1`
+- [Cisco Webex Meetings Plans Pricing](https://apis.io/plans/cisco-webex-meetings/cisco-webex-meetings-plans-pricing/)
 
-#### Tags
+#### Rate limits (1)
 
-- Attendees
-- Participants
-- Real-Time
+Published request limits.
 
-#### Properties
+- [Cisco Webex Meetings Rate Limits](https://apis.io/rate-limits/cisco-webex-meetings/cisco-webex-meetings-rate-limits/)
 
-- [Documentation](https://developer.webex.com/docs/api/v1/meeting-participants)
-- [Postman Collection](collections/cisco-webex-meetings.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-webex-meetings.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### FinOps (1)
 
-### Webex Meeting Preferences API
+What the API costs to run, by operation.
 
-Manage host meeting preferences including personal room URLs, audio defaults, scheduling templates, and site preferences.
+- [Cisco Webex Meetings Finops](https://apis.io/finops/cisco-webex-meetings/cisco-webex-meetings-finops/)
 
-- **Human URL:** [https://developer.webex.com/docs/api/v1/meeting-preferences](https://developer.webex.com/docs/api/v1/meeting-preferences)
-- **Base URL:** `https://webexapis.com/v1`
+## Where to find this API
 
-#### Tags
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- Personal Room
-- Preferences
-- Settings
-
-#### Properties
-
-- [Documentation](https://developer.webex.com/docs/api/v1/meeting-preferences)
-- [Postman Collection](collections/cisco-webex-meetings.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-webex-meetings.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Webex Recordings API
-
-List and manage meeting recordings. Provides access to recording details, download links, and metadata, with separate endpoints for admin and compliance officer access.
-
-- **Human URL:** [https://developer.webex.com/docs/api/v1/recordings](https://developer.webex.com/docs/api/v1/recordings)
-- **Base URL:** `https://webexapis.com/v1`
-
-#### Tags
-
-- Compliance
-- Media
-- Recordings
-- Storage
-
-#### Properties
-
-- [Documentation](https://developer.webex.com/docs/api/v1/recordings)
-- [Postman Collection](collections/cisco-webex-meetings.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-webex-meetings.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Webex Meeting Transcripts API
-
-Retrieve and manage meeting transcripts including download endpoints for VTT and TXT transcript formats. Supports compliance officer access for governance workflows.
-
-- **Human URL:** [https://developer.webex.com/docs/api/v1/meeting-transcripts](https://developer.webex.com/docs/api/v1/meeting-transcripts)
-- **Base URL:** `https://webexapis.com/v1`
-
-#### Tags
-
-- Accessibility
-- AI
-- Captions
-- Transcripts
-
-#### Properties
-
-- [Documentation](https://developer.webex.com/docs/api/v1/meeting-transcripts)
-- [Postman Collection](collections/cisco-webex-meetings.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-webex-meetings.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Webex Meeting Q and A API
-
-Retrieve questions and answers from Webex meetings and webinars for engagement reporting and post-event follow-up workflows.
-
-- **Human URL:** [https://developer.webex.com/docs/api/v1/meeting-qanda](https://developer.webex.com/docs/api/v1/meeting-qanda)
-- **Base URL:** `https://webexapis.com/v1`
-
-#### Tags
-
-- Engagement
-- Q and A
-- Webinars
-
-#### Properties
-
-- [Documentation](https://developer.webex.com/docs/api/v1/meeting-qanda)
-- [Postman Collection](collections/cisco-webex-meetings.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-webex-meetings.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Webex Meeting Polls API
-
-Retrieve polls and poll responses from Webex meetings and webinars for engagement analytics and post-event reporting.
-
-- **Human URL:** [https://developer.webex.com/docs/api/v1/meeting-polls](https://developer.webex.com/docs/api/v1/meeting-polls)
-- **Base URL:** `https://webexapis.com/v1`
-
-#### Tags
-
-- Engagement
-- Polls
-- Surveys
-
-#### Properties
-
-- [Documentation](https://developer.webex.com/docs/api/v1/meeting-polls)
-- [Postman Collection](collections/cisco-webex-meetings.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-webex-meetings.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Webex Meeting Chats API
-
-Retrieve chat transcripts from completed Webex meetings for compliance and post-meeting reporting.
-
-- **Human URL:** [https://developer.webex.com/docs/api/v1/meeting-chats](https://developer.webex.com/docs/api/v1/meeting-chats)
-- **Base URL:** `https://webexapis.com/v1`
-
-#### Tags
-
-- Chat
-- Compliance
-- Meetings
-
-#### Properties
-
-- [Documentation](https://developer.webex.com/docs/api/v1/meeting-chats)
-- [Postman Collection](collections/cisco-webex-meetings.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-webex-meetings.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Webex XML API
-
-The Webex XML API is the legacy SOAP-style interface for deep integration with Webex Meetings. It supports site administration, user provisioning, and meeting management for scenarios that pre-date the REST API.
-
-- **Human URL:** [https://developer.cisco.com/docs/webex-xml-api-reference-guide/](https://developer.cisco.com/docs/webex-xml-api-reference-guide/)
-
-#### Tags
-
-- Enterprise
-- Legacy
-- SOAP
-- XML
-
-#### Properties
-
-- [Documentation](https://developer.cisco.com/docs/webex-xml-api-reference-guide/)
-- [Postman Collection](collections/cisco-webex-meetings.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-webex-meetings.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [GitHub Organization](https://github.com/webex)
-- [Portal](https://developer.webex.com/)
 - [Documentation](https://developer.webex.com/docs/meetings)
-- [Getting Started](https://developer.webex.com/docs/getting-started)
-- [Authentication](https://developer.webex.com/docs/integrations)
-- [S D Ks](https://developer.webex.com/docs/sdks)
-- [Webhooks](https://developer.webex.com/docs/webhooks)
-- [Rate Limits](https://developer.webex.com/docs/api-rate-limits)
-- [Changelog](https://developer.webex.com/docs/api/changelog)
-- [Status Page](https://status.webex.com/)
+- [Getting started](https://developer.webex.com/docs/getting-started)
 - [Support](https://developer.webex.com/support)
+- [Changelog](https://developer.webex.com/docs/api/changelog)
 - [Blog](https://developer.webex.com/blog)
-- [Community](https://community.cisco.com/t5/webex-developers/bd-p/4416j-disc-dev-webex)
-- [Terms of Service](https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end-user-license-agreement.html)
-- [Privacy Policy](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
-- [JSON-LD](json-ld/cisco-webex-meetings-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Spectral Rules](rules/cisco-webex-meetings-rules.yml) — [Spectral](https://docs.stoplight.io/docs/spectral)
+- [Terms of service](https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end-user-license-agreement.html)
+- [Privacy policy](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
+- [GitHub](https://github.com/webex)
+- [Status](https://status.webex.com/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cisco Webex Meetings: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cisco-webex-meetings/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
